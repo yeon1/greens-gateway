@@ -1,0 +1,35 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+}
+
+#h1-title {
+    text-align: center;
+}
+
+.item-greens {
+    cursor: pointer;
+}
+
+.item-greens:hover {
+  background-color: #EAEAEA;
+}
+
+.row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.col {
+    margin-top: 0;
+}
+
+.container {
+    margin-top: 10px;
+    padding: 20px;
+}

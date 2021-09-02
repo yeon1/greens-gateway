@@ -1,0 +1,8 @@
+
+greens.clients:
+  fruit:
+    tokenUrl: http://fruit.api.postype.net/token
+    getUrl: http://fruit.api.postype.net/product
+  vegetable:
+    tokenUrl: http://vegetable.api.postype.net/token
+    getUrl: http://vegetable.api.postype.net/item

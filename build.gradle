@@ -1,0 +1,43 @@
+plugins {
+    id 'org.springframework.boot' version '2.5.3'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group 'com.greens'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    implementation "com.fasterxml.jackson.module:jackson-module-parameter-names"
+    implementation "com.fasterxml.jackson.datatype:jackson-datatype-jdk8"
+    implementation "com.fasterxml.jackson.datatype:jackson-datatype-jsr310"
+
+    implementation "org.apache.httpcomponents:httpclient:4.5.12"
+
+    implementation "org.webjars:bootstrap:5.1.0"
+    implementation "org.webjars.bower:jquery:3.6.0"
+
+    compileOnly 'org.projectlombok:lombok'
+
+    annotationProcessor "org.projectlombok:lombok"
+
+    testCompileOnly 'org.projectlombok:lombok'
+    testAnnotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+    useJUnitPlatform()
+}
