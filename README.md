@@ -9,6 +9,7 @@
 
 ## 접속방법
 프로젝트 실행 후 브라우저에서 http://{ip address or localhost}:{port}/ 접속
-http://localhost:8080/
+
+ex) http://localhost:8080/
 
 ![](./images/main.png)
